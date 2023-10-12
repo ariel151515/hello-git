@@ -1,0 +1,66 @@
+Curso de GIT y GITHUB desde CERO para PRINCIPIANTES
+https://www.youtube.com/watch?v=3GymExBkKjE
+
+--------------------------------------------------------------------------------
+GIT
+------------------------------
+git -v = versin de git
+ls = listado de directorio
+cd = para desplazarnos por los ficheros
+pwd = el lugar en donde me encuentro
+mkdir "hello Git" =  crea una carpeta con el nombre "Hello Git"
+
+git config --global = user.name "Ariel Gentile"
+git config --global alias.tree "git log --graph --decorate --all --oneline"
+
+git init = raiz del directorio donde queremos inicializar el contexto de git
+
+git branch -m main = le cambiamos el nombre de nuestra rama principal por main
+git status = el estado de los archivos
+git add nombred el archivo =  agrega el archivo al area de steach
+git add . =  agrega todos los archivos  (Los prepara de nuestra area local para la fotografia)
+git commit -m "este es mi primer comit" = hacemos la fotografia del archivo  
+git log = lista los commit (el historial de commit), (del log se sale con la tecla q)
+git checkout nombre del archivo = (ES PARA SITUARNOS EN UN PUNTO EN CONCRETO PASANDOLE UN ID), muestra la ultima fotografia que se guardo en la rama (el archivo antes de ser modificado por ultima vez)
+git reset =  para volver a la ultima fotografia
+
+git log --graph = para que se listen los commit de forma bonita
+git log --graph --oneline = para que se listen los commit de forma bonita y legible
+git log --graph --pretty=oneline
+git log --graph --decorate --all --oneline = muestra el commit en una sola linea
+
+git config --global alias.tree "git log --graph --decorate --all --oneline" =  el alias (crea alias a los comandos, generalmente se usan en los comandos mas usados) 
+git tree
+git status
+
+git ignore =  ignora los archivos (el .gitignore se comitea)
+git diff = nos indica los cambios que se realizaron en un archivo especifico buenisimo!!
+
+git reset --hard 324324234 = se posiciona en el commit 324324234 y desde ahi elimina todo (funciona tanto hacia atras como hacia adelante)
+
+git tag tag_1 =  (los tag de las  aplicaciones suelen ser las versiones Ejemplo: 1.0)
+git checkout tags/clase_1 =  para moverse entre tags
+git tag = lista las tag
+
+
+// Las ramas se utilizan para trabajaos temporales
+---------------------------------------------------
+git branch login = para crear una rama
+git switch login = para moverme a la rama login
+git branch -d = para eliminar una rama
+git merge main = Unifica las ramas (se le dice mergear)
+
+git diff = Tambien sirve para comparar ramas
+
+git reflog = 
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+GitHub
+------------------------------
+git remote add origin https://github.com/ariel151515/hello-git.git
+git push origin
+git push -u origin main  (le indicamos la rama)
+--------------------------------------------------------------------------------
+
