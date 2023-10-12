@@ -28,6 +28,7 @@ git log --graph = para que se listen los commit de forma bonita
 git log --graph --oneline = para que se listen los commit de forma bonita y legible
 git log --graph --pretty=oneline
 git log --graph --decorate --all --oneline = muestra el commit en una sola linea
+git log --oneline --decorate --all --graph
 
 git config --global alias.tree "git log --graph --decorate --all --oneline" =  el alias (crea alias a los comandos, generalmente se usan en los comandos mas usados) 
 git tree
@@ -50,11 +51,14 @@ git switch login = para moverme a la rama login
 git branch -d = para eliminar una rama
 git merge main = Unifica las ramas (se le dice mergear)
 
+
+git merge = Para que el codigo vuelva a la rama principal (o fucionar el codigo) (rama orige, rama destino)
+            git merge nombre de la rama de origen
+
 git diff = Tambien sirve para comparar ramas
 
 git reflog = 
 --------------------------------------------------------------------------------
-
 
 --------------------------------------------------------------------------------
 GitHub
@@ -62,5 +66,14 @@ GitHub
 git remote add origin https://github.com/ariel151515/hello-git.git
 git push origin
 git push -u origin main  (le indicamos la rama)
+
+git fetch = Se descarga el historial sin los cambios
+git pull =  Se descarga el historial con los 
+
+git clone = clona el repo en la pc
+pull request = propuestas de cambio en las cuales nosotros no seamos administradores ni desarrolladores
+
 --------------------------------------------------------------------------------
 
+invesigar videos:
+crear ramas y unificarlas en github (pull request, merge)
