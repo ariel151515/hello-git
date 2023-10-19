@@ -50,7 +50,7 @@ git branch login = para crear una rama
 git switch login = para moverme a la rama login
 git branch -d = para eliminar una rama
 git merge main = Unifica las ramas (se le dice mergear)
-
+git branch -m <nombre-anterior> <nombre-nuevo>
 
 git merge = Para que el codigo vuelva a la rama principal (o fucionar el codigo) (rama orige, rama destino)
             git merge nombre de la rama de origen
